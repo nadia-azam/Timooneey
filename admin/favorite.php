@@ -36,7 +36,7 @@ $total_plan= $count_plan->rowCount();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Favorite</title>
     
     <!-- font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -61,7 +61,7 @@ $total_plan= $count_plan->rowCount();
             <div class="box">
                 <h3>welcome!</h3>
                 <p><?=$fetch_profile['name']; ?></p>
-                <a href="profile.php" class="btn">view profile</a>
+                <a href="../admin/profil.php" class="btn">view profile</a>
             </div>
 
             
@@ -81,7 +81,7 @@ $total_plan= $count_plan->rowCount();
             <div class="box">
                 <h3><?= $total_doc; ?></h3>
                 <p>total pdf</p>
-                <a href="../admin/pdf.php" class="btn">view pdf</a>
+                <a href="../admin/pdf.php" class="btn">view document</a>
             </div>
 
             

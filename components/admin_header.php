@@ -18,8 +18,8 @@ if(isset($message)){
 <header class="header">
     <section class="flex">
 
-        <a href="dashboard.php" class="logo" ><img src="../images/myLogo.jpeg" width="150px" id="#logo2"></a>
-        
+        <!--<a href="dashboard.php" class="logo" >--><img src="../images/myLogo.jpeg" width="150px" id="#logo2">
+
         <!--<form action="search_page.php" method="post" class="search-form">
             <input type="text" placeholder="search here..." required maxlength="100" name="search_box">
             <button type="submit" class="fas fa-search" name="search_btn"></button>
@@ -27,9 +27,10 @@ if(isset($message)){
 
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <div id="search-btn" class="fas fa-search"></div>
+            
             <div id="user-btn" class="fas fa-user"></div>
             <div id="toggle-btn" class="fas fa-sun"></div>
+            <a href="../admin/login.php"><div id="search-btn" class="fas fa-right-from-bracket"></div></a>
         </div>
         <div class="profile">
             <?php
@@ -46,7 +47,7 @@ if(isset($message)){
             <div class="flex-btn">
                 
                 <a href="update.php" class="btn">update </a>
-                <a href="../components/admin_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
+                <a href="../admin/login.php" onclick="return confirm('logout from this website?');" class="delete-btn">logout</a>
             </div>
             
             <!--<div class="flex-btn">
@@ -120,11 +121,11 @@ if(isset($message)){
         </div>
         <nav class="navbar">
             <a href="dashboard.php"><i class="fas fa-home "></i><span>home</span></a>
-            <a href="../admin/plans.php"><i class="fas fa-comment "></i><span>my plans</span></a>
-            <a href="../admin/favorite.php"><i class="fas fa-bars-staggered "></i><span>my favorites</span></a>
-            <a href="../admin/budget.php"><i class="fas fa-graduation-cap "></i><span>budget</span></a>
+            <a href="../admin/plans.php"><i class="fas fa-tasks "></i><span>my plans</span></a>
+            <a href="../admin/favorite.php"><i class="fas fa-images"></i><span>my favorites</span></a>
+            <a href="../admin/budget.php"><i class="fas fa-coins "></i><span>budget</span></a>
             
-            <a href="../components/admin_logout.php" onclick="return confirm('logout from this website?');"><i class="fas fa-right-from-bracket"></i><span>logout</span></a>
+            <a href="../admin/login.php" onclick="return confirm('logout from this website?');"><i class="fas fa-right-from-bracket"></i><span>logout</span></a>
         </nav>
 </div>
 <!-- side bar section ends-->

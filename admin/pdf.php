@@ -44,7 +44,7 @@ if(isset($_POST['delete_playlist'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard</title>
+    <title>Document</title>
     <!-- font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
@@ -60,11 +60,11 @@ if(isset($_POST['delete_playlist'])){
 <!-- view playlist section starts-->
 
 <section class="playlists">
-        <h1 class="heading">all  pdf</h1>
+        <h1 class="heading">all  documents</h1>
         <div class="box-container">
             <div class="box" style="text-align: center;">
-                <h3 class="title" style="padding-bottom: .7rem;">create new pdf</h3>
-                <a href="../admin/add_pdf.php" class="btn">add pdf</a>
+                <h3 class="title" style="padding-bottom: .7rem;">create new document</h3>
+                <a href="../admin/add_pdf.php" class="btn">add document</a>
             </div>
             <?php
                 $select_playlist = $conn->prepare("SELECT *FROM `pdf` WHERE tutor_id = ?");

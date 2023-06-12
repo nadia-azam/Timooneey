@@ -805,6 +805,21 @@ i.fa-play:hover{
     
 }
 
+/* budget style  starts*/
+.dashboard .texts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* budget style  ends*/
+
+
+
+
+
 
 
 

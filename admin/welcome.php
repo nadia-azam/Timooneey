@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/welcome.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="./icone.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
@@ -123,6 +123,9 @@ section{
 #connexion{
     background-color: black;
     color: var(--white);
+}
+#connexion:hover{
+  background-color: rgb(0, 0, 0,0.4);
 }
 
 .btn{
@@ -529,8 +532,8 @@ margin-bottom: -9rem;
   
         <div class="menu" style="display: flex; gap:4rem ; text-decoration:none; font-size:1.8rem; padding-top:0.7rem ; color:black">
             <a class="nav-link" href="#"><p class="menu-link" >Home  <span class="arrow"></span></p></a>
-            <a class="nav-link" href="#"><p class="menu-link">Services  <span class="arrow"></span> </p></a>
-            <a class="nav-link" href="#"><p class="menu-link">Contacts  <span class="arrow"></span></p></a>
+            <a class="nav-link" href="../admin/services.php"><p class="menu-link">Services  <span class="arrow"></span> </p></a>
+            <a class="nav-link" href="#footeer"   id="contact"><p class="menu-link">Contacts  <span class="arrow"></span></p></a>
             <a class="nav-link" href="../admin/sign.php" id="connexion1" ><p class="menu-link">connexion <span class="arrow"></span></p></a>
         </div>
 
@@ -558,7 +561,7 @@ margin-bottom: -9rem;
             <h3>Welcome to your Timoney</h3>
             <p>for every minute spent organizing , an hour is earned.threfore, <span>Timoney</span> is your choice  for both organizing 
             your <span>Time</span> and organizing your <span>money</span></p><br><br>
-            <a href="courses.html" class="inline-btn btn">go</a>
+            
         </div>
         <div class="image">
             <img src="../images/photo_welcome.jpeg" alt="">
@@ -569,7 +572,7 @@ margin-bottom: -9rem;
 <div class="box">
     <div class="HB">
       <h1 id="h" >Ready to achieve great things? Sign up!</h1>
-      <button id="go" href="#">GO</button>
+      <a id="go" href="../admin/sign.php">GO</a>
     </div>
     <div class="img" style="margin-top: 3rem;">
       <img src="../images/left-quote.png" width="60px" height="130px" style="margin-left: 1rem;display: block;" id="img">
@@ -582,13 +585,13 @@ margin-bottom: -9rem;
     </div>
   </div>
 <!--footer-->
-<div class="footer">
+<div class="footer" id="footeer">
     <div class="box-footer">
         <div class="links">
             <h3>Quick links</h3>
-            <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-            <a href="about.php"> <i class="fas fa-angle-right"></i> services</a>
-            <a href="package.php"> <i class="fas fa-angle-right"></i> contacts</a>
+            <a href="#"> <i class="fas fa-angle-right"></i> home</a>
+            <a href="../admin/services.php"> <i class="fas fa-angle-right"></i> services</a>
+            <a href="#"> <i class="fas fa-angle-right"></i> contacts</a>
             
         </div>
         <div class="links">
@@ -601,7 +604,7 @@ margin-bottom: -9rem;
         <div class="links">
             <h3>Contact info</h3>
             <a href="#"> <i class="fas fa-phone"></i> +212608251522</a>
-            <a href="#"> <i class="fas fa-phone"></i> +212608251522</a>
+            <a href="#"> <i class="fas fa-phone"></i>0536520260</a>
             <a href="#"> <i class="fas fa-map"></i> Oujda , Maroc</a>
         </div>
         <div class="links">
@@ -631,6 +634,8 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
 };
+
+
 </script>
 </body>
 </html>

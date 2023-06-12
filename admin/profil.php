@@ -80,11 +80,11 @@ $total_plan= $count_plan->rowCount();
             <div class="box">
                 <h3><?= $total_doc ?></h3>
                 <p>total document</p>
-                <a href="pdf.php" class="btn"> view pdf</a>
+                <a href="pdf.php" class="btn"> view document</a>
             </div>
             <div class="box">
                 
-                <a href="budget.php" class="btn">see my budjet</a>
+                <a href="budget.php" class="btn">see my budget</a>
             </div>
         
             </div>

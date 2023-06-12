@@ -85,7 +85,7 @@ $total_plan= $count_plan->rowCount();
             <div class="box">
                 <h3><?= $total_doc; ?></h3>
                 <p>all pdf</p>
-                <a href="../admin/add_pdf.php" class="btn">add pdf</a>
+                <a href="../admin/add_pdf.php" class="btn">add document</a>
             </div>
 
             
